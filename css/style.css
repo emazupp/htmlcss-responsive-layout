@@ -141,6 +141,7 @@ b {
   display: flex;
   flex-direction: column;
   padding: 0px 15px;
+  padding-bottom: 20px;
 }
 
 .lower-section-title {
@@ -174,12 +175,13 @@ b {
 .footer {
   background-color: #7c69a4;
   color: white;
-  font-size: 0.6em;
+  font-size: 0.5em;
   padding: 15px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 7px;
 }
 
 .company-info > p > b {
@@ -190,15 +192,21 @@ b {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5px;
 }
 
 .important-links > ul {
   display: flex;
-  gap: 10px;
+  column-gap: 9px;
+  row-gap: 5px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .important-links > ul > li {
   flex: 0 0 20%;
+}
+
+.important-links > ul > li > a {
+  color: white;
 }
