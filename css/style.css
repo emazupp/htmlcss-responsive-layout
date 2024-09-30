@@ -8,6 +8,8 @@
 
 body {
   font-family: Montserrat, "Helvetica Neue", sans-serif;
+  color: #333;
+  background-color: #f6f5f3;
 }
 
 li {
@@ -25,6 +27,31 @@ img {
   display: none;
 }
 
+ul {
+  display: flex;
+}
+
+b {
+  color: black;
+}
+
+.fa-facebook {
+  color: #1a77f3;
+}
+
+.fa-twitter {
+  color: #009eff;
+}
+.fa-instagram {
+  color: #de3d78;
+}
+.fa-pinterest {
+  color: #e62222;
+}
+.fa-youtube {
+  color: #e62222;
+}
+
 /* header */
 
 .header {
@@ -32,6 +59,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .logo {
@@ -39,8 +67,8 @@ img {
   color: orange;
   font-weight: 900;
   text-align: center;
-  font-size: 1.5em;
-  text-shadow: 1px 1px #222;
+  font-size: 1.8em;
+  text-shadow: 1px 1px #999;
 }
 
 /* main */
@@ -50,11 +78,60 @@ img {
 .upper-section {
   display: flex;
   flex-direction: column;
+  gap: 1px;
+  padding: 0px 15px;
+}
+
+#food-type {
+  font-size: 0.7em;
+  color: #888;
+}
+
+.upper-section-title {
+  font-size: 1em;
+  color: #4e3969;
+  padding-bottom: 13px;
+}
+
+.ytvideo > img {
+  aspect-ratio: 1.9;
+}
+
+.upper-section-description {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  box-shadow: 1px 1px 10px #ddd;
+}
+
+.upper-section-description > h2 {
+  line-height: 50px;
+  font-size: 0.9em;
+}
+
+.upper-section-description > p {
+  line-height: 20px;
+  font-size: 0.7em;
+}
+
+.social-button {
+  padding-top: 20px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-button > ul > li {
+  padding: 7px 15px;
+  box-shadow: 1px 1px 10px #ddd;
+  border-radius: 20px;
 }
 
 /* lower-section */
 
-.lower.section {
+.lower-section {
   display: flex;
   flex-direction: column;
+  padding: 0px 15px;
 }
