@@ -209,12 +209,11 @@ b {
 }
 
 .important-links {
-  width: 50%;
+  width: 70%;
 }
 
 .important-links > ul {
   display: flex;
-  column-gap: 9px;
   row-gap: 5px;
   flex-wrap: wrap;
   justify-content: center;
@@ -222,6 +221,7 @@ b {
 
 .important-links > ul > li {
   text-align: center;
+  flex: 0 0 21%;
 }
 
 .important-links > ul > li > a {
@@ -305,6 +305,10 @@ b {
   .important-links > ul {
     flex-wrap: nowrap;
   }
+
+  .recipe-upper-container {
+    display: block;
+  }
 }
 
 /* desktop */
@@ -319,6 +323,28 @@ b {
     width: 70%;
   }
 
+  .recipe-upper-container {
+    display: flex;
+  }
+
+  .ytvideo {
+    flex: 0 0 70%;
+  }
+
+  .upper-section-description {
+    flex: 0 0 30%;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  .upper-section-description > h2 {
+    padding: 0;
+  }
+
+  .p-container {
+    display: block;
+  }
+
   .social-list > li {
     display: flex;
     justify-content: center;
@@ -326,7 +352,8 @@ b {
   }
 
   .social-button > ul > li {
-    padding: 7px 30px;
+    padding: 10px 0px;
+    flex: 0 0 19%;
   }
 
   .fa-brands {
@@ -344,5 +371,37 @@ b {
 
   .recipe-description {
     font-size: 0.9em;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+  }
+
+  .important-links {
+    width: 40%;
+  }
+
+  .company-info {
+    align-items: baseline;
+  }
+}
+
+/* bonus 576px */
+
+@media screen and (min-width: 576px) {
+  .social-button > ul > li {
+    padding: 7px 50px;
+  }
+
+  .recipe-description {
+    display: block;
+  }
+
+  .recipe-description > img {
+    float: left;
+    width: 40%;
+    margin-right: 10px;
   }
 }
