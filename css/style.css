@@ -18,6 +18,13 @@ li {
 
 /* utils */
 
+hr {
+  width: 20%;
+  background-color: #f7972e;
+  height: 1px;
+  border: none;
+}
+
 img {
   display: block;
   width: 100%;
@@ -134,4 +141,64 @@ b {
   display: flex;
   flex-direction: column;
   padding: 0px 15px;
+}
+
+.lower-section-title {
+  padding-bottom: 5px;
+}
+
+.lower-section-title > h2 {
+  font-weight: 400;
+}
+
+.lower-section-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.lower-section-image > img {
+  width: 65%;
+  box-shadow: 1px 1px 10px #ddd;
+}
+
+.recipe-description {
+  padding-top: 10px;
+  font-size: 0.8em;
+  line-height: 25px;
+}
+
+/* footer */
+
+.footer {
+  background-color: #7c69a4;
+  color: white;
+  font-size: 0.6em;
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-info > p > b {
+  color: white;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.important-links > ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.important-links > ul > li {
+  flex: 0 0 20%;
 }
