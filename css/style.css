@@ -230,6 +230,24 @@ b {
 
 /* media query */
 
+/* bonus 576px */
+
+@media screen and (min-width: 576px) {
+  .social-button > ul > li {
+    padding: 7px 50px;
+  }
+
+  .recipe-description {
+    display: block;
+  }
+
+  .recipe-description > img {
+    float: left;
+    width: 40%;
+    margin-right: 10px;
+  }
+}
+
 /* tablet */
 
 @media screen and (min-width: 768px) {
@@ -385,23 +403,5 @@ b {
 
   .company-info {
     align-items: baseline;
-  }
-}
-
-/* bonus 576px */
-
-@media screen and (min-width: 576px) {
-  .social-button > ul > li {
-    padding: 7px 50px;
-  }
-
-  .recipe-description {
-    display: block;
-  }
-
-  .recipe-description > img {
-    float: left;
-    width: 40%;
-    margin-right: 10px;
   }
 }
