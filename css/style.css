@@ -10,10 +10,18 @@ body {
   font-family: Montserrat, "Helvetica Neue", sans-serif;
 }
 
+li {
+  list-style-type: none;
+}
+
 /* utils */
 
 img {
   display: block;
+}
+
+.d-none {
+  display: none;
 }
 
 /* header */
@@ -35,3 +43,21 @@ img {
 }
 
 /* main */
+
+/* upper-section */
+
+.upper-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* lower-section */
+
+.lower.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.ytvideo > img {
+  width: 100%;
+}
